@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavalJKO - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/ae38ca3b1e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class ="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Front-end Developer | I.T Specialist</p>
+            <h1>Hi, I'm <span>John Kenneth</span>,<br>Computer Engineer</h1>
+        </div>
+    </div>
+</div>
+
+<!-- About Me Section -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png" width="500px">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hello! I'm John Kenneth Naval, a Bachelor of Science in Computer Engineering graduate with a specialization in Embedded Systems. With a passion for creating innovative and efficient solutions, I thrive on integrating hardware and software to build sophisticated systems. My portfolio showcases my journey, skills, and projects in the world of embedded systems and beyond. Thank you for visiting, and I look forward to sharing my work with you!</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('info')">Other Skills</p>
+                </div>
+                <div class="tab-contents" id="info">
+                    <ul>
+                        <li><span>Languages:</span> Python, Java, JavaScript, C, C++, HTML/CSS, Bash</li>
+                        <li><span>Databases:</span> SQL, MySQL</li>
+                        <li><span>Frameworks:</span> Node.js, Bootstrap</li>
+                        <li><span>Tools & Technologies:</span> Git</li>    
+                    </ul>
+                </div>
+                <div class="tab-contents active-tab" id="education">
+                    <ul>
+                        <li><span>Technological Institute of the Philippines - Quezon City</span>
+                            <br><i>938 Aurora Boulevard , Cubao, Quezon City, Philippines</i>
+                            <br><br><span>Degree:</span> B.S. in Computer Engineering
+                            <br><a class="btnS">• Specialization in Embedded Systems</a>
+                            <br><br><a href="https://drive.google.com/file/d/1FX-PWAUMy2XX9RfRKbi6laxi2B9vLnJj/view?usp=drive_link" download class="btn btn2" target="_blank">View CV <i class="fa-solid fa-download"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="skills">
+                    <ul>
+                        <li><span>Web Development</span><br>Proficient in HTML5, CSS3, and JavaScript for building responsive and interactive websites.
+                        <br><span>Tools Used:</span>
+                        <br>Languages & Frameworks: HTML5, CSS3, JavaScript, React.js
+                        <br>Version Control: Git, Github</li>
+                        <li><span>Hardware & Software Troubleshooting</span><br>Provide support to end users relating to hardware and software, computer applications, LAN components and peripherals
+                            <br>Experience with Active Directory, Remote Support, Network Monitoring/Management.</li>
+                        <li><span>Network troubleshooting</span><br> Diagnosing and resolving network issues to ensure smooth and reliable connectivity</li>    
+                    </ul>
+                </div>
+                
+
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Services -->
+ <div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Responsive Design: Creating beautiful and user-friendly websites that look great on all devices.
+                <br>UI/UX Design: Crafting intuitive and engaging user interfaces for seamless user experiences.
+                <br>HTML/CSS/JavaScript: Developing clean, efficient code to bring your vision to life.
+                <br>Custom Solutions: Tailoring every project to fit your unique needs and brand identity.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-screwdriver-wrench"></i>
+                <h2>I.T Specialist</h2>
+                <p>Laptop & Desktop Repair: Fast and reliable troubleshooting and repairs for your computers.
+                <br>CCTV Installation: Professional setup and installation of CCTV systems for your security needs.
+                <br>Custom Desktop Builds: Tailoring and assembling high-performance desktop computers to meet your specifications.
+                <br>Tech Support: Providing comprehensive tech support to keep your systems running smoothly.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-brush"></i>
+                <h2>Graphic Design</h2>
+                <p>Specialize in photographing racing pigeons with a focus on capturing detailed images that highlight their unique eyes and natural beauty, enhancing their market appeal. 
+                <br>Edit and enhance photos using Adobe Photoshop to highlight subject matter and create visually appealing images. 
+                <br>Provide custom graphic design services to clients, including digital art, photo editing, and layout design. </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- Portfolio -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work1.png" alt="Work1">
+                <div class="layer">
+                    <h3>Automated Drying Machine for Cacao Beans</h3>
+                    <p>The dryness and quality of cacao beans are heavily affected by the unstable weather patterns in the country, causing the cacao production to sustain significant losses. 
+                    The device is also able to monitor the temperature through the user’s mobile device. 
+                    The test results indicate the prototype can dry the cacao beans within 9 hours compared to the traditional sun drying that takes up to 30 hours of drying. </p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work2.png" alt="Work2">
+                <div class="layer">
+                    <h3>Papaya Academy Inc. - School Network and Computer Room Configuration</h3>
+                    <p>Successfully designed and implemented a high-performance network infrastructure for a school, ensuring reliable connectivity and seamless communication across classrooms and administrative offices. 
+                    <br>Configured a secure LAN and equipped the computer room and Integrated robust security measures and provided comprehensive user training and technical support, ensuring a smooth and efficient operational environment.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work3.png" alt="Work3">
+                <div class="layer">
+                <h3>Pigeon I.D and Graphic Design</h3>
+                    <p>Specialize in photographing racing pigeons with an emphasis on high-quality images that capture the intricate details of the pigeon's eyes and features.
+                    <br>Utilize advanced photography techniques to enhance the market appeal of racing pigeons through visually striking images.
+                    <br>Skilled in using Adobe Photoshop and Canva to create compelling visual content that enhances branding and engagement.</p>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="work-list">
+        <div class="work">
+            <img src="images/work4.png" alt="Work4">
+            <div class="layer">
+            <h3>Joystick Controlled Surveillance Cam</h3>
+                <p>Our project, "Joystick Controlled Surveillance Cam," leverages the power of Arduino technology to provide a cost-effective and efficient solution for enhanced airport security. This innovative system allows security personnel to manually control a surveillance camera using a joystick, providing real-time, flexible monitoring of critical areas.
+                    Our project not only aims to improve situational awareness and reaction times but also demonstrates the practical integration of hardware and software to address real-world challenges. By harnessing the capabilities of Arduino and mobile technology, we strive to deliver an adaptable, user-friendly surveillance solution tailored for the dynamic environment of an airport.
+                </p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work5.png" alt="Work5">
+            <div class="layer">
+            <h3>Heart Rate Monitoring System</h3>
+                <p>Introducing an innovative Heart Rate Monitoring System developed using Arduino, seamlessly integrated with both web and mobile applications. 
+                    This project offers real-time heart rate tracking, leveraging Arduino's sensors to collect accurate data. Users can easily monitor their heart rate through an intuitive web platform and a user-friendly mobile app, ensuring they stay informed about their heart health anytime, anywhere. This system exemplifies the perfect blend of hardware and software, providing a comprehensive solution for personal health monitoring..</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/work6.png" alt="Work6">
+            <div class="layer">
+            <h3>Need a New Website?</h3>
+                <p>Are you looking to create a stunning, responsive website that captures your brand’s essence and engages your audience? Look no further! As a skilled Front-End Web Developer, I specialize in crafting modern, user-friendly websites tailored to meet your unique needs.  
+                Let’s work together to build a powerful online presence that stands out in today’s digital landscape. 
+                <br>Contact me today to get started!</p>
+                <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        </div>
+        <a href="#" class="btn">See more</a>    
+    </div>
+
+
+
+</div>
+
+ 
+<!-- Contact -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-regular fa-envelope"></i>navaljko@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i>+639167352370</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com/in/navaljko" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/NavalJKO" target="_blank"  rel="noopener noreferrer"><i class="fa-brands fa-github"></i></i></a>
+                </div>
+                <a href="images/NavalJohnKenneth_CV.pdf" download class="btn btn2" target="_blank">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © 2020 - 2024  NavalJKO</p>
+    </div>
+</div>
+
+<!-- SCRIPT -->
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbw7rnv3NlgJQIMHxDJp1kosD1TRM1qVTQ1Cnw5OlW_0xpg-b38oLk0gZk7HjHmN1gV-/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message Sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+   <a class="gotopbtn" href="#"><i class="fa-solid fa-arrow-up"></i></a> 
+</body>
+</html>
